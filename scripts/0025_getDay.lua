@@ -1,24 +1,24 @@
--- getMonth.lua
+-- getDay.lua
 
-function getMonth()
+function getDay()
     local currentDate = ll.GetDate()
-    -- get characters 6-7 for the month
-    local month = string.sub(currentDate, 6, 7)
-    return month
+    -- get characters 9-10 for the day
+    local day = string.sub(currentDate, 9, 10)
+    return day
 end
 
 function state_entry()
-    ll.Say(0, getMonth())
+    ll.Say(0, getDay())
 end
 
 function touch_start()
-    ll.Say(0, getMonth())
+    ll.Say(0, getDay())
 end
 
 state_entry()
 
 --[[
-03
+21
 ]]
 
 --[[
