@@ -1,27 +1,37 @@
--- getTime24PST.lua
+-- getTime24EST.lua
 
-function getTime24PST()
+function getTime24EST()
     local timeInSeconds = ll.GetWallclock()
+    
+    -- Convert seconds to hours, minutes, and seconds
     local hours = math.floor(timeInSeconds / 3600)
     local minutes = math.floor((timeInSeconds % 3600) / 60)
     local remainingSeconds = timeInSeconds % 60
 
-    -- HH:MM:SS
+    -- we add 3 hours for the EST time zone
+    hours = hours + 3
+
+    -- if hours go beyond 23, reset to 0
+    if hours >= 24 then
+        hours = hours - 24
+    end
+
+    -- HH:MM:SS format
     return string.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
 end
 
 function state_entry()
-    ll.Say(0, "Current SL time: " .. getTime24PST())
+    ll.Say(0, "Current EST time: " .. getTime24EST())
 end
 
 function touch_start()
-    ll.Say(0, "Current SL time: " .. getTime24PST())
+    ll.Say(0, "Current EST time: " .. getTime24EST())
 end
 
 state_entry()
 
 --[[
-Current SL time: 12:37:22
+Current EST time: 16:51:34
 ]]
 
 --[[
