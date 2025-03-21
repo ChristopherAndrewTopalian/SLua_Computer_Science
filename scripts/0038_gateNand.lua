@@ -1,24 +1,25 @@
--- getMonth.lua
+-- gateNand.lua
 
-function getMonth()
-    local currentDate = ll.GetDate()
-    -- get characters 6-7 for the month
-    local month = string.sub(currentDate, 6, 7)
-    return month
+function gateNand(a, b)
+    if a == 0 or b == 0 then
+        return "Both False or A True or B True"
+    else
+        return '0'
+    end
 end
 
 function state_entry()
-    ll.Say(0, getMonth())
+    ll.Say(0, gateNand(0, 1))
 end
 
 function touch_start(total_number)
-    ll.Say(0, getMonth())
+    ll.Say(0, gateNand(0, 1))
 end
 
 state_entry()
 
 --[[
-03
+Both False or A True or B True
 ]]
 
 --[[

@@ -22,7 +22,7 @@ function state_entry()
     ll.Say(0, "Current SL time in CST: " .. getTime24CST())
 end
 
-function touch_start()
+function touch_start(total_number)
     ll.Say(0, "Current SL time in CST: " .. getTime24CST())
 end
 

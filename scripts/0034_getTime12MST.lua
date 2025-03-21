@@ -28,7 +28,7 @@ function state_entry()
     ll.Say(0, "Current SL time in MST: " .. getTime12MST())
 end
 
-function touch_start()
+function touch_start(total_number)
     ll.Say(0, "Current SL time in MST: " .. getTime12MST())
 end
 

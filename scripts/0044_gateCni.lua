@@ -1,22 +1,25 @@
--- getDate.lua
+-- gateCni.lua
 
-function getDate()
-    local currentDate = ll.GetDate();
-    return currentDate;
+function gateCni(a, b)
+    if a == 0 and b == 1 then
+        return "B True"
+    else
+        return '0'
+    end
 end
 
 function state_entry()
-    ll.Say(0, getDate())
+    ll.Say(0, gateCni(0, 1))
 end
 
-function touch_start(total_number)
-    ll.Say(0, getDate())
+function touch_start()
+    ll.Say(0, gateCni(0, 1))
 end
 
 state_entry()
 
 --[[
-2025-03-21
+B True
 ]]
 
 --[[

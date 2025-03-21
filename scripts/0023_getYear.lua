@@ -11,7 +11,7 @@ function state_entry()
     ll.Say(0, getYear())
 end
 
-function touch_start()
+function touch_start(total_number)
     ll.Say(0, getYear())
 end
 
