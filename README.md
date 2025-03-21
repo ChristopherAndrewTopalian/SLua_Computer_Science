@@ -1,6 +1,10 @@
 # SLua Computer Science
 In Second Life we can program using SLua. SLua enables many new possibilities in virtual world content creation. This tutorial teaches how to program using SLua.  
 
+Please give this page a LIKE :-)  
+
+Please Follow my GitHub page for updates :-)  
+
 If you enjoy my apps and tutorials consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)  
 
 ---
