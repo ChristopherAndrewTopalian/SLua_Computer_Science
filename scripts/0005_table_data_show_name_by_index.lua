@@ -1,4 +1,4 @@
--- table_data_show_one_name.lua
+-- table_data_show_name_by_index.lua
 
 local people = {
     {
