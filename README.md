@@ -5,7 +5,7 @@ Please give this page a LIKE :-)
 
 Please Follow my GitHub page for updates :-)  
 
-If you enjoy my apps and tutorials consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)  
+If you enjoy my apps and tutorials and want to buy me a coffee you can use [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)  
 
 ---
 
