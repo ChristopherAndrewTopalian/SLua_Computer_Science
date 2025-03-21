@@ -1,11 +1,16 @@
--- GetDate.lua
+-- getDate.lua
+
+function getDate()
+    local currentDate = ll.GetDate();
+    return currentDate;
+end
 
 function state_entry()
-    ll.Say(0, ll.GetDate())
+    ll.Say(0, getDate())
 end
 
 function touch_start()
-    ll.Say(0, ll.GetDate())
+    ll.Say(0, getDate())
 end
 
 state_entry()
