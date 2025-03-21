@@ -2,7 +2,7 @@
 
 function getDayName()
     -- YYYY-MM-DD
-    local today = ll.GetDate()
+    local currentDate = ll.GetDate()
 
     -- days of the week
     local daysOfWeek = {
@@ -16,7 +16,7 @@ function getDayName()
     }
 
     -- get year, month and day from date
-    local year, month, day = string.match(today, "(%d+)-(%d+)-(%d+)")
+    local year, month, day = string.match(currentDate, "(%d+)-(%d+)-(%d+)")
 
     -- convert extracted values to numbers
     year = tonumber(year)
