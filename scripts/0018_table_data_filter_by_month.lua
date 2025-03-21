@@ -18,7 +18,7 @@ function touch_start(total_number)
     local targetMonth = "03"
 
     for i = 1, #people do
-        -- extract month chars 6-7
+        -- extract month characters 6-7
         local month = string.sub(people[i].date, 6, 7)
 
         -- check if it matches target month
