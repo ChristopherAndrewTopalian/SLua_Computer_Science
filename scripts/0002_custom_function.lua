@@ -4,15 +4,13 @@ function ourFunction()
    ll.Say(0, "Hi Everyone")
 end
 
-function state_entry()
-    ourFunction()
-end
-
 function touch_start(total_number)
-   ll.Say(0, "Object was touched.")
+   ourFunction();
 end
 
-state_entry()
+--[[
+Hi Everyone
+]]
 
 --[[
 Dedicated to God the Father

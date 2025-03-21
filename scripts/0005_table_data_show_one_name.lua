@@ -1,17 +1,23 @@
--- default_script.lua
+-- table_data_show_one_name.lua
 
-function state_entry()
-   ll.Say(0, "Hi Everyone")
-end
+local people = {
+    {
+        name = "jane",
+        score = 98
+    },
+
+    {
+        name = "tabitha",
+        score = 93
+    }
+}
 
 function touch_start(total_number)
-   ll.Say(0, "Object was Touched")
+   ll.Say(0, people[1].name)
 end
 
-state_entry()
-
 --[[
-Object was Touched
+jane
 ]]
 
 --[[

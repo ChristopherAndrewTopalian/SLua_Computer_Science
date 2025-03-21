@@ -1,4 +1,4 @@
--- table_data_show_one_name.lua
+-- table_data_filter_by_score_less_than.lua
 
 local people = {
     {
@@ -13,8 +13,16 @@ local people = {
 }
 
 function touch_start(total_number)
-   ll.Say(0, people[1].name)
+    for i = 1, #people do
+        if people[i].score < 98 then
+            ll.Say(0, people[i].name)
+        end
+    end
 end
+
+--[[
+tabitha
+]]
 
 --[[
 Dedicated to God the Father
