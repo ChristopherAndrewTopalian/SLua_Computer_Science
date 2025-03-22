@@ -1,13 +1,13 @@
--- SetText_tostring_decrement_counter.lua
+-- SetText_tostring_multiply_count.lua
 
-local count = 100
+local count = 10
 
 function state_entry()
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
 end
 
 function touch_start(total_number)
-    count -= 1
+    count *= 10
 
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
 end
@@ -15,7 +15,7 @@ end
 state_entry()
 
 --[[
-100
+10
 ]]
 
 --[[

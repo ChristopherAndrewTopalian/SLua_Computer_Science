@@ -1,4 +1,4 @@
--- SetText_tostring_increment_counter.lua
+-- SetText_tostring_increment_count.lua
 
 local count = 0
 
