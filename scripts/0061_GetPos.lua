@@ -1,17 +1,17 @@
 -- GetPos.lua
 
-local thePosition;
+local currentPos;
 
 function state_entry()
-    thePosition = ll.GetPos()
+    currentPos = ll.GetPos()
 
-    ll.SetText(tostring(thePosition), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
 end
 
 function touch_start(total_number)
-    thePosition = ll.GetPos()
+    currentPos = ll.GetPos()
 
-    ll.SetText(tostring(thePosition), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
 end
 
 state_entry()
