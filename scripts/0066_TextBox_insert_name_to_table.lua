@@ -1,4 +1,4 @@
--- TextBox_add_name_to_table.lua
+-- TextBox_insert_name_to_table.lua
 
 local nameList = {}
 local channel = 100
