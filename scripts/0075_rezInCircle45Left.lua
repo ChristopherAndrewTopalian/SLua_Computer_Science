@@ -1,10 +1,10 @@
--- rezInCircleFortyFiveDegreeLeft.lua
+-- rezInCircle45Left.lua
 
 local objectName = "Object"
 local numberOfPrims = 16
 local radius = 2.0
 
-function rezInCircleFortyFiveDegreeLeft()
+function rezInCircle45Left()
     local center = ll.GetPos()
     local rot = ll.GetRot()
 
@@ -34,7 +34,7 @@ function rezInCircleFortyFiveDegreeLeft()
 end
 
 function touch_start(total_number)
-    rezInCircleFortyFiveDegreeLeft()
+    rezInCircle45Left()
 end
 
 --[[
