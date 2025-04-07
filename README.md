@@ -1956,7 +1956,7 @@ https://github.com/ChristopherAndrewTopalian
 local ourMessage = "Hi Everyone"
 
 function state_entry()
-    ll.SetText(ourMessage, vector(0, 255, 255), 1)
+    Text(ourMessage, vector(0, 255, 255), 1)
 end
 
 state_entry()
