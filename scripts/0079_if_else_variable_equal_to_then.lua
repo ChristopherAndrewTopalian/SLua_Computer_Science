@@ -1,16 +1,18 @@
--- if_variable_equal_to_then.lua
+-- if_else_variable_equal_to_then.lua
 
 function touch_start(total_number)
-    local ourNumber = 17
+    local ourNumber = 19
 
     if ourNumber == 17 then
         ll.Say(0, 'Number is 17')
+    else
+        ll.Say(0, 'Number is NOT 17')
     end
 
 end
 
 --[[
-Number is 17
+Number is NOT 17
 ]]
 
 --[[
