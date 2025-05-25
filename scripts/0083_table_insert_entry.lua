@@ -21,8 +21,6 @@ function state_entry()
         ll.Say(0, people[i].name .. ": " .. people[i].score)
     end
 
-    -- display the final string in nearby chat
-    ll.Say(0, text)
 end
 
 -- call the state_entry function to run the script
