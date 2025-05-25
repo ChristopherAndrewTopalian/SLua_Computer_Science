@@ -1,36 +1,32 @@
--- table_sort_by_date_ascending.lua
+-- table_sort_by_date_ascending_ymd.lua
 
 local people =
 {
     {
         name = "jane",
         score = 98,
-        date = '03/01/1980'
+        date = '1980-03-01'
     },
 
     {
         name = "tabitha",
         score = 93,
-        date = '10/05/1987'
+        date = '1987-10-05'
     },
 
     {
         name = "jennifer",
         score = 95,
-        date = '06/15/1983'
+        date = '1983-06-15'
     }
 }
 
--- helper function to convert MM/DD/YYYY to a number for sorting
-local function date_to_number(date_string)
-    local month, day, year = date_string:match("(%d%d)/(%d%d)/(%d%d%d%d)")
-    return tonumber(year .. month .. day)
-end
-
 -- sort people by date in ascending order
-table.sort(people, function(a, b)
-    return date_to_number(a.date) < date_to_number(b.date)
-end)
+table.sort(people,
+    function(a, b)
+        return a.date < b.date
+    end
+)
 
 function touch_start(total_number)
     for i = 1, #people do
@@ -41,9 +37,9 @@ end
 touch_start()
 
 --[[
-jane - 03/01/1980
-jennifer - 06/15/1983
-tabitha - 10/05/1987
+jane - 1980-03-01
+jennifer - 1983-06-15
+tabitha - 1987-10-05
 ]]
 
 --[[
