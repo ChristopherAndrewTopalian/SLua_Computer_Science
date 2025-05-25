@@ -20,7 +20,6 @@ function state_entry()
        -- say the person's name and score
         ll.Say(0, people[i].name .. ": " .. people[i].score)
     end
-
 end
 
 -- call the state_entry function to run the script
