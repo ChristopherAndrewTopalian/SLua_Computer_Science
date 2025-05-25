@@ -1,6 +1,6 @@
 -- table_insert_entries.lua
 
--- create an empty list to store people
+-- create an empty table to store people
 local people = {}
 
 -- define a table for jane with a name and score
