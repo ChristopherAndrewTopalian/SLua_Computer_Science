@@ -1,4 +1,4 @@
--- table_sort_by_name.lua
+-- table_sort_by_name_ascending.lua
 
 local people =
 {
