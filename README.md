@@ -14,7 +14,7 @@ If you enjoy my apps and tutorials and want to buy me a coffee you can use [payp
 2. Choose Download ZIP
 3. Save the Zip File
 4. Extract All
-5. Double click the HTML file to start the App
+5. Open the README.md file in VSCode
 
 ---
 
