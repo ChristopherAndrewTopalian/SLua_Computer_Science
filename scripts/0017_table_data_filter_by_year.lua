@@ -14,7 +14,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         -- extract first 4 characters
         local year = string.sub(people[i].date, 1, 4)

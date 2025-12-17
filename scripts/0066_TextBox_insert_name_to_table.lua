@@ -8,7 +8,7 @@ function state_entry()
     ll.SetText("Touch to add your name", vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local userKey = ll.DetectedKey(0)
     listener = ll.Listen(channel, "", userKey, "")
     ll.TextBox(userKey, "Type your name:", channel)

@@ -4,7 +4,7 @@ function state_entry()
    ll.Say(0, "Hi Everyone")
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
    ll.Say(0, "Object was Touched")
 end
 

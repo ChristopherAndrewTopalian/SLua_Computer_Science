@@ -28,7 +28,7 @@ function rezInCircleVertical()
     end
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     rezInCircleVertical()
 end
 

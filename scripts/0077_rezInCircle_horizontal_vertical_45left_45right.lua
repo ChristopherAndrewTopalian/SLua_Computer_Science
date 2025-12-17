@@ -66,7 +66,7 @@ function rez45Right()
     rezInCircle(tiltAxis1, tiltAxis2)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     rezHorizontal()
     rezVertical()
     rez45Left()

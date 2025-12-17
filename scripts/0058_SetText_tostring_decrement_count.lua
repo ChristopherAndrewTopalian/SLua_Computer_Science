@@ -6,7 +6,7 @@ function state_entry()
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     count -= 1
 
     ll.SetText(tostring(count), vector(0, 255, 255), 1)

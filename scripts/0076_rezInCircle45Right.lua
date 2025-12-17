@@ -33,7 +33,7 @@ function rezInCircle45Right()
     end
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     rezInCircle45Right()
 end
 

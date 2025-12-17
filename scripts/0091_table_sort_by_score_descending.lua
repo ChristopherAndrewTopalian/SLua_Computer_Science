@@ -21,7 +21,7 @@ table.sort(people, function(a, b)
     return a.score > b.score
 end)
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         -- say each person's name and score
         ll.Say(0, people[i].name .. ": " .. people[i].score)

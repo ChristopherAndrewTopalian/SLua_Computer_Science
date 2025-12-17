@@ -12,7 +12,7 @@ function state_entry()
     ll.Say(0, gateXor(1, 0))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateXor(1, 0))
 end
 

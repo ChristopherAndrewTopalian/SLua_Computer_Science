@@ -16,7 +16,7 @@ function state_entry()
     ll.Say(0, getMonthDayYear())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, getMonthDayYear())
 end
 

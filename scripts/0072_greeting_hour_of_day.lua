@@ -36,7 +36,7 @@ function state_entry()
     ll.SetText(tostring(hour) .. " - " .. greeting, vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local hour = getHours()
     local greeting = getGreeting(hour)
     ll.OwnerSay("Current hour (SLT): " .. tostring(hour))

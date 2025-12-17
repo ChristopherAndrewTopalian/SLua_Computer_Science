@@ -14,7 +14,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].date == '1987/10/05 17:00' then
             ll.Say(0, people[i].name)

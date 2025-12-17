@@ -13,7 +13,7 @@ function state_entry()
     ll.SetText(tostring(seconds), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local seconds = getSeconds()  -- get the current seconds in SLT
     ll.OwnerSay("Current seconds (PST): " .. tostring(seconds))
     ll.SetText(tostring(seconds), vector(0, 255, 255), 1)

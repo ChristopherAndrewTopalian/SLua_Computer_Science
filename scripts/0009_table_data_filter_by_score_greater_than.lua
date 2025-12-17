@@ -12,7 +12,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         -- check if the score is greater than 95
         if people[i].score > 95 then

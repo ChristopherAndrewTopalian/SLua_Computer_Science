@@ -1,6 +1,6 @@
 -- for_loop_count_to_5.lua
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     -- start a for loop that counts from 1 to 5
     for i = 1, 5 do
         ll.Say(0, 'Count: ' .. tostring(i))

@@ -8,7 +8,7 @@ function state_entry()
     ll.SetText("Touch to register your name", vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local userKey = ll.DetectedKey(0)
     local userName = ll.DetectedName(0)
 

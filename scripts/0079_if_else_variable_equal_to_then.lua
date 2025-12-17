@@ -1,6 +1,6 @@
 -- if_else_variable_equal_to_then.lua
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local ourNumber = 19
 
     if ourNumber == 17 then

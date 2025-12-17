@@ -12,7 +12,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
    ll.Say(0, people[1].name)
 end
 

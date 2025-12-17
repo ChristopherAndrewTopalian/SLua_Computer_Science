@@ -6,7 +6,7 @@ function state_entry()
     ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.SetPos(ll.GetPos() + vector(0, 0, 0.1))
 
     ll.SetText(tostring(ll.GetPos()), vector(0, 255, 255), 1)

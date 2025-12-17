@@ -29,7 +29,7 @@ function state_entry()
    ll.Say(0, "Hi Everyone")
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
    ll.Say(0, "Object was Touched")
 end
 
@@ -54,7 +54,7 @@ function ourFunction()
    ll.Say(0, "Hi Everyone")
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
    ourFunction();
 end
 
@@ -85,7 +85,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         ll.Say(0, people[i].name)
     end
@@ -111,7 +111,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         ll.Say(0, people[i].score)
     end
@@ -138,7 +138,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         -- Concatenate name and score and display them together
         ll.Say(0, "Name: " .. people[i].name .. ", Score: " .. people[i].score)
@@ -166,7 +166,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
    ll.Say(0, people[1].name)
 end
 
@@ -197,7 +197,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].name == "tabitha" then
             ll.Say(0, people[i].name)
@@ -232,7 +232,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].score == 98 then
             ll.Say(0, people[i].name)
@@ -267,7 +267,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         -- check if the score is greater than 95
         if people[i].score > 95 then
@@ -303,7 +303,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].score < 98 then
             ll.Say(0, people[i].name)
@@ -340,7 +340,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].date == '03/01/1980' then
             ll.Say(0, people[i].name)
@@ -377,7 +377,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].date > '03/01/1980' then
             ll.Say(0, people[i].name)
@@ -415,7 +415,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].date < '1989/01/05' then
             ll.Say(0, people[i].name)
@@ -453,7 +453,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].date == '1987/10/05 17:00' then
             ll.Say(0, people[i].name)
@@ -490,7 +490,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].date > '1980/03/01 08:50' then
             ll.Say(0, people[i].name)
@@ -527,7 +527,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         if people[i].date < '1987/10/05 16:30' then
             ll.Say(0, people[i].name)
@@ -564,7 +564,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         -- extract first 4 characters
         local year = string.sub(people[i].date, 1, 4)
@@ -605,7 +605,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local targetMonth = "03"
 
     for i = 1, #people do
@@ -648,7 +648,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local targetYearMonth = "1987/10"
 
     for i = 1, #people do
@@ -691,7 +691,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local targetMonthDay = "03/01"
 
     for i = 1, #people do
@@ -724,7 +724,7 @@ function state_entry()
     ll.Say(0, ll.GetDate())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, ll.GetDate())
 end
 
@@ -754,7 +754,7 @@ function state_entry()
     ll.Say(0, getDate())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, getDate())
 end
 
@@ -786,7 +786,7 @@ function state_entry()
     ll.Say(0, getYear())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, getYear())
 end
 
@@ -818,7 +818,7 @@ function state_entry()
     ll.Say(0, getMonth())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, getMonth())
 end
 
@@ -850,7 +850,7 @@ function state_entry()
     ll.Say(0, getDay())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, getDay())
 end
 
@@ -888,7 +888,7 @@ function state_entry()
     ll.Say(0, getMonthName())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, getMonthName())
 end
 
@@ -943,7 +943,7 @@ function state_entry()
     ll.Say(0, "Today is " .. getDayName())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Today is " .. getDayName())
 end
 
@@ -980,7 +980,7 @@ function state_entry()
     ll.Say(0, getMonthDayYear())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, getMonthDayYear())
 end
 
@@ -1015,7 +1015,7 @@ function state_entry()
     ll.Say(0, "Current SL time: " .. getTime24PST())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Current SL time: " .. getTime24PST())
 end
 
@@ -1053,7 +1053,7 @@ function state_entry()
     ll.Say(0, "Current SL time in MST: " .. getTime24MST())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Current SL time in MST: " .. getTime24MST())
 end
 
@@ -1096,7 +1096,7 @@ function state_entry()
     ll.Say(0, "Current SL time in CST: " .. getTime24CST())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Current SL time in CST: " .. getTime24CST())
 end
 
@@ -1141,7 +1141,7 @@ function state_entry()
     ll.Say(0, "Current EST time: " .. getTime24EST())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Current EST time: " .. getTime24EST())
 end
 
@@ -1187,7 +1187,7 @@ function state_entry()
     ll.Say(0, "Current SL time: " .. getTime12PST())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Current SL time: " .. getTime12PST())
 end
 
@@ -1236,7 +1236,7 @@ function state_entry()
     ll.Say(0, "Current SL time in MST: " .. getTime12MST())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Current SL time in MST: " .. getTime12MST())
 end
 
@@ -1290,7 +1290,7 @@ function state_entry()
     ll.Say(0, "Current SL time in CST: " .. getTime12CST())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Current SL time in CST: " .. getTime12CST())
 end
 
@@ -1346,7 +1346,7 @@ function state_entry()
     ll.Say(0, "Current EST time: " .. getTime12EST())
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, "Current EST time: " .. getTime12EST())
 end
 
@@ -1379,7 +1379,7 @@ function state_entry()
     ll.Say(0, gateAnd(1, 1))
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, gateAnd(1, 1))
 end
 
@@ -1412,7 +1412,7 @@ function state_entry()
     ll.Say(0, gateNand(0, 1))
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, gateNand(0, 1))
 end
 
@@ -1445,7 +1445,7 @@ function state_entry()
     ll.Say(0, gateOr(0, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateOr(0, 1))
 end
 
@@ -1478,7 +1478,7 @@ function state_entry()
     ll.Say(0, gateNor(0, 0))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateNor(0, 0))
 end
 
@@ -1511,7 +1511,7 @@ function state_entry()
     ll.Say(0, gateXor(1, 0))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateXor(1, 0))
 end
 
@@ -1544,7 +1544,7 @@ function state_entry()
     ll.Say(0, gateXnor(1, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateXnor(1, 1))
 end
 
@@ -1577,7 +1577,7 @@ function state_entry()
     ll.Say(0, gateCi(1, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateCi(1, 1))
 end
 
@@ -1610,7 +1610,7 @@ function state_entry()
     ll.Say(0, gateCni(0, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateCni(0, 1))
 end
 
@@ -1643,7 +1643,7 @@ function state_entry()
     ll.Say(0, gateMi(0, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateMi(0, 1))
 end
 
@@ -1676,7 +1676,7 @@ function state_entry()
     ll.Say(0, gateMni(1, 0))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateMni(1, 0))
 end
 
@@ -1709,7 +1709,7 @@ function state_entry()
     ll.Say(0, gateRp(0, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateRp(0, 1))
 end
 
@@ -1742,7 +1742,7 @@ function state_entry()
     ll.Say(0, gateRc(1, 0))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateRc(1, 0))
 end
 
@@ -1775,7 +1775,7 @@ function state_entry()
     ll.Say(0, gateLp(1, 0))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateLp(1, 0))
 end
 
@@ -1808,7 +1808,7 @@ function state_entry()
     ll.Say(0, gateLc(0, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateLc(0, 1))
 end
 
@@ -1844,7 +1844,7 @@ function state_entry()
     ll.Say(0, gateTautology(0, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateTautology(0, 1))
 end
 
@@ -1880,7 +1880,7 @@ function state_entry()
     ll.Say(0, gateContradiction(0, 1))
 end
 
-function touch_start()
+function LLEvents.touch_start(detected)
     ll.Say(0, gateContradiction(0, 1))
 end
 
@@ -1905,7 +1905,7 @@ function state_entry()
    ll.Say(0, 'Touch to find out your uuid key')
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, ll.DetectedKey(0))
 end
 
@@ -1931,7 +1931,7 @@ function state_entry()
    ll.Say(0, 'Touch to say your name')
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     ll.Say(0, ll.DetectedName(0))
 end
 
@@ -2005,7 +2005,7 @@ function state_entry()
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     count += 1
 
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
@@ -2034,7 +2034,7 @@ function state_entry()
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     count -= 1
 
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
@@ -2063,7 +2063,7 @@ function state_entry()
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     count *= 10
 
     ll.SetText(tostring(count), vector(0, 255, 255), 1)
@@ -2119,7 +2119,7 @@ function state_entry()
     ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     currentPos = ll.GetPos()
 
     ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
@@ -2150,7 +2150,7 @@ function state_entry()
     ll.SetText(tostring(currentScale), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     currentScale = ll.GetScale()
 
     ll.SetText(tostring(currentScale), vector(0, 255, 255), 1)
@@ -2181,7 +2181,7 @@ function state_entry()
     ll.SetText(tostring(freeMemory), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     freeMemory = ll.GetFreeMemory()
 
     ll.SetText(tostring(freeMemory), vector(0, 255, 255), 1)

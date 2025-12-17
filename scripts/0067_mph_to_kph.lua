@@ -7,7 +7,7 @@ function state_entry()
     ll.SetText("Touch to enter speed in mph", vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local userKey = ll.DetectedKey(0)
     listener = ll.Listen(channel, "", userKey, "")
     ll.TextBox(userKey, "Type speed in mph:", channel)

@@ -4,7 +4,7 @@ function ourFunction()
    ll.Say(0, "Hi Everyone")
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
    ourFunction();
 end
 

@@ -12,7 +12,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     for i = 1, #people do
         -- Concatenate name and score and display them together
         ll.Say(0, "Name: " .. people[i].name .. ", Score: " .. people[i].score)

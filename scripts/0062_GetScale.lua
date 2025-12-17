@@ -8,7 +8,7 @@ function state_entry()
     ll.SetText(tostring(currentScale), vector(0, 255, 255), 1)
 end
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     currentScale = ll.GetScale()
 
     ll.SetText(tostring(currentScale), vector(0, 255, 255), 1)

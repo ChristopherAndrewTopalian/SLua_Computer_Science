@@ -14,7 +14,7 @@ local people = {
     }
 }
 
-function touch_start(total_number)
+function LLEvents.touch_start(detected)
     local targetMonthDay = "03/01"
 
     for i = 1, #people do
