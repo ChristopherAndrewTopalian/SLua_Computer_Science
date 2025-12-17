@@ -38,8 +38,6 @@ function LLEvents.touch_start(detected)
     end
 end
 
-touch_start()
-
 --[[
 tabitha - 10/05/1987
 jennifer - 06/15/1983
