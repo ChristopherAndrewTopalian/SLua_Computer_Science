@@ -1,6 +1,6 @@
--- default_script.lua
+-- simple_script.lua
 
-function state_entry()
+local function main()
    ll.Say(0, "Hi Everyone")
 end
 
@@ -8,7 +8,7 @@ function LLEvents.touch_start(detected)
    ll.Say(0, "Object was Touched")
 end
 
-state_entry()
+main()
 
 --[[
 Object was Touched
