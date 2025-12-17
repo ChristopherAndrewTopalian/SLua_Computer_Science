@@ -4,7 +4,7 @@ local message1 = "Hi Everyone"
 local message2 = "Happy Scripting"
 
 function state_entry()
-    ll.SetText(message1 .. '\n' .. message2, vector(0, 255, 255), 1)
+    ll.SetText(message1 .. '\n' .. message2, vector(0, 1, 1), 1)
 end
 
 state_entry()

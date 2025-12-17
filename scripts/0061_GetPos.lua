@@ -5,13 +5,13 @@ local currentPos;
 function state_entry()
     currentPos = ll.GetPos()
 
-    ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentPos), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     currentPos = ll.GetPos()
 
-    ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentPos), vector(0, 1, 1), 1)
 end
 
 state_entry()

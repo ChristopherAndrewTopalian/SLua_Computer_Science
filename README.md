@@ -1956,7 +1956,7 @@ https://github.com/ChristopherAndrewTopalian
 local ourMessage = "Hi Everyone"
 
 function state_entry()
-    Text(ourMessage, vector(0, 255, 255), 1)
+    Text(ourMessage, vector(0, 1, 1), 1)
 end
 
 state_entry()
@@ -1979,7 +1979,7 @@ https://github.com/ChristopherAndrewTopalian
 local count = 0
 
 function state_entry()
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 state_entry()
@@ -2002,13 +2002,13 @@ https://github.com/ChristopherAndrewTopalian
 local count = 0
 
 function state_entry()
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     count += 1
 
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 state_entry()
@@ -2031,13 +2031,13 @@ https://github.com/ChristopherAndrewTopalian
 local count = 100
 
 function state_entry()
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     count -= 1
 
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 state_entry()
@@ -2060,13 +2060,13 @@ https://github.com/ChristopherAndrewTopalian
 local count = 10
 
 function state_entry()
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     count *= 10
 
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 state_entry()
@@ -2090,7 +2090,7 @@ local message1 = "Hi Everyone"
 local message2 = "Happy Scripting"
 
 function state_entry()
-    ll.SetText(message1 .. '\n' .. message2, vector(0, 255, 255), 1)
+    ll.SetText(message1 .. '\n' .. message2, vector(0, 1, 1), 1)
 end
 
 state_entry()
@@ -2116,13 +2116,13 @@ local currentPos;
 function state_entry()
     currentPos = ll.GetPos()
 
-    ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentPos), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     currentPos = ll.GetPos()
 
-    ll.SetText(tostring(currentPos), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentPos), vector(0, 1, 1), 1)
 end
 
 state_entry()
@@ -2147,13 +2147,13 @@ local currentScale;
 function state_entry()
     currentScale = ll.GetScale()
 
-    ll.SetText(tostring(currentScale), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentScale), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     currentScale = ll.GetScale()
 
-    ll.SetText(tostring(currentScale), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentScale), vector(0, 1, 1), 1)
 end
 
 state_entry()
@@ -2178,13 +2178,13 @@ local freeMemory;
 function state_entry()
     freeMemory = ll.GetFreeMemory()
 
-    ll.SetText(tostring(freeMemory), vector(0, 255, 255), 1)
+    ll.SetText(tostring(freeMemory), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     freeMemory = ll.GetFreeMemory()
 
-    ll.SetText(tostring(freeMemory), vector(0, 255, 255), 1)
+    ll.SetText(tostring(freeMemory), vector(0, 1, 1), 1)
 end
 
 state_entry()

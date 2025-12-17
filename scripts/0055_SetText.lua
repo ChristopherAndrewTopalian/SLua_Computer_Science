@@ -3,7 +3,7 @@
 local ourMessage = "Hi Everyone"
 
 function state_entry()
-    ll.SetText(ourMessage, vector(0, 255, 255), 1)
+    ll.SetText(ourMessage, vector(0, 1, 1), 1)
 end
 
 state_entry()

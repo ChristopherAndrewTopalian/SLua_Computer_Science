@@ -3,13 +3,13 @@
 local count = 100
 
 function state_entry()
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     count -= 1
 
-    ll.SetText(tostring(count), vector(0, 255, 255), 1)
+    ll.SetText(tostring(count), vector(0, 1, 1), 1)
 end
 
 state_entry()

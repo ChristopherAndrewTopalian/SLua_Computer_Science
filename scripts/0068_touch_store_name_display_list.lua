@@ -5,7 +5,7 @@ local channel = 100
 local listener = nil
 
 function state_entry()
-    ll.SetText("Touch to register your name", vector(0, 255, 255), 1)
+    ll.SetText("Touch to register your name", vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
@@ -26,7 +26,7 @@ function updateDisplay()
     for key, name in pairs(userTable) do
         text = text .. name .. "\n"
     end
-    ll.SetText(text, vector(0, 255, 0), 1)
+    ll.SetText(text, vector(0, 1, 0), 1)
 end
 
 state_entry()

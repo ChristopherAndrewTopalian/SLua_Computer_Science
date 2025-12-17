@@ -5,13 +5,13 @@ local freeMemory;
 function state_entry()
     freeMemory = ll.GetFreeMemory()
 
-    ll.SetText(tostring(freeMemory), vector(0, 255, 255), 1)
+    ll.SetText(tostring(freeMemory), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     freeMemory = ll.GetFreeMemory()
 
-    ll.SetText(tostring(freeMemory), vector(0, 255, 255), 1)
+    ll.SetText(tostring(freeMemory), vector(0, 1, 1), 1)
 end
 
 state_entry()

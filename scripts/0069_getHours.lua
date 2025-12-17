@@ -19,13 +19,13 @@ end
 function state_entry()
     local hour = getHours()  -- get the current hour in SLT
     ll.OwnerSay("Current hour (SLT): " .. tostring(hour))
-    ll.SetText(tostring(hour), vector(0, 255, 255), 1)
+    ll.SetText(tostring(hour), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     local hour = getHours()  -- get the current hour in SLT
     ll.OwnerSay("Current hour (PST): " .. tostring(hour))
-    ll.SetText(tostring(hour), vector(0, 255, 255), 1)
+    ll.SetText(tostring(hour), vector(0, 1, 1), 1)
 end
 
 state_entry()

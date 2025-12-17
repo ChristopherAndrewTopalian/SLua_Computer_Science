@@ -5,13 +5,13 @@ local currentScale;
 function state_entry()
     currentScale = ll.GetScale()
 
-    ll.SetText(tostring(currentScale), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentScale), vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
     currentScale = ll.GetScale()
 
-    ll.SetText(tostring(currentScale), vector(0, 255, 255), 1)
+    ll.SetText(tostring(currentScale), vector(0, 1, 1), 1)
 end
 
 state_entry()

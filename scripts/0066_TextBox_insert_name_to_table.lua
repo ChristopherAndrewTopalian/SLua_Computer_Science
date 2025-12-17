@@ -5,7 +5,7 @@ local channel = 100
 local listener = nil
 
 function state_entry()
-    ll.SetText("Touch to add your name", vector(0, 255, 255), 1)
+    ll.SetText("Touch to add your name", vector(0, 1, 1), 1)
 end
 
 function LLEvents.touch_start(detected)
@@ -19,7 +19,7 @@ function listen(channel, name, id, message)
         table.insert(nameList, message)
         updateText()
     else
-        ll.SetText("No name entered.", vector(255, 0, 0), 1)
+        ll.SetText("No name entered.", vector(1, 0, 0), 1)
     end
 
     ll.ListenRemove(listener)
@@ -30,7 +30,7 @@ function updateText()
     for i = 1, #nameList do
         list = list .. nameList[i] .. "\n"
     end
-    ll.SetText(list, vector(0, 255, 0), 1)
+    ll.SetText(list, vector(0, 1, 0), 1)
 end
 
 state_entry()
