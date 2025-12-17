@@ -5,7 +5,7 @@ function state_entry()
 end
 
 function LLEvents.touch_start(detected)
-    ll.Say(0, ll.DetectedName(0))
+    ll.Say(0, ll.DetectedName(1))
 end
 
 state_entry()
