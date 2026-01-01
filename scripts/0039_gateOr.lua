@@ -2,25 +2,23 @@
 
 function gateOr(a, b)
     if a == 1 or b == 1 then
-        return "One or Both True"
+        return 1 -- One or Both True
     else
-        return '0'
+        return 0
     end
 end
 
 function state_entry()
-    ll.Say(0, gateOr(0, 1))
+    ll.Say(0, tostring(gateOr(0, 1)))
 end
 
 function LLEvents.touch_start(detected)
-    ll.Say(0, gateOr(0, 1))
+    ll.Say(0, tostring(gateOr(0, 1)))
 end
 
 state_entry()
 
---[[
-One or Both True
-]]
+-- 1
 
 --[[
 Dedicated to God the Father

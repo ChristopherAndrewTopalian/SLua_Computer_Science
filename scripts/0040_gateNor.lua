@@ -2,25 +2,23 @@
 
 function gateNor(a, b)
     if a == 0 and b == 0 then
-        return "Both False"
+        return 1 -- Both False
     else
-        return '0'
+        return 0
     end
 end
 
 function state_entry()
-    ll.Say(0, gateNor(0, 0))
+    ll.Say(0, tostring(gateNor(0, 0)))
 end
 
 function LLEvents.touch_start(detected)
-    ll.Say(0, gateNor(0, 0))
+    ll.Say(0, tostring(gateNor(0, 0)))
 end
 
 state_entry()
 
---[[
-Both False
-]]
+-- 1
 
 --[[
 Dedicated to God the Father

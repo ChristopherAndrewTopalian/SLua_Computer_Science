@@ -2,23 +2,24 @@
 
 function gateAnd(a, b)
     if a == 1 and b == 1 then
-        return "Both True"
+        return 1 -- Both True
     else
-        return "Not Both True"
+        return 0 -- Not Both True
     end
 end
 
 function state_entry()
-    ll.Say(0, gateAnd(1, 1))
+    ll.Say(0, tostring(gateAnd(1, 1)))
 end
 
 function LLEvents.touch_start(detected)
-    ll.Say(0, gateAnd(1, 1))
+    ll.Say(0, tostring(gateAnd(1, 1)))
 end
 
 state_entry()
 
 --[[
+1
 Both True
 ]]
 

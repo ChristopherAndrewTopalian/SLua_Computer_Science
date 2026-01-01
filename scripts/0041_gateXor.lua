@@ -2,25 +2,23 @@
 
 function gateXor(a, b)
     if (a == 1 and b == 0) or (a == 0 and b == 1) then
-        return "A True or B True"
+        return 1 -- A True or B True
     else
-        return '0'
+        return 0
     end
 end
 
 function state_entry()
-    ll.Say(0, gateXor(1, 0))
+    ll.Say(0, tostring(gateXor(1, 0)))
 end
 
 function LLEvents.touch_start(detected)
-    ll.Say(0, gateXor(1, 0))
+    ll.Say(0, tostring(gateXor(1, 0)))
 end
 
 state_entry()
 
---[[
-A True or B True
-]]
+-- 1
 
 --[[
 Dedicated to God the Father

@@ -2,18 +2,18 @@
 
 function gateNand(a, b)
     if a == 0 or b == 0 then
-        return "Both False or A True or B True"
+        return 1 -- Both False or A True or B True
     else
-        return '0'
+        return 0
     end
 end
 
 function state_entry()
-    ll.Say(0, gateNand(0, 1))
+    ll.Say(0, tostring(gateNand(0, 1)))
 end
 
 function LLEvents.touch_start(detected)
-    ll.Say(0, gateNand(0, 1))
+    ll.Say(0, tostring(gateNand(0, 1)))
 end
 
 state_entry()

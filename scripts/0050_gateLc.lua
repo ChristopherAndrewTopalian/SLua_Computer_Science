@@ -2,25 +2,23 @@
 
 function gateLc(a, b)
     if a == 0 then
-        return "Both False or B True"
+        return 1 -- Both False or B True
     else
-        return '0'
+        return 0
     end
 end
 
 function state_entry()
-    ll.Say(0, gateLc(0, 1))
+    ll.Say(0, tostring(gateLc(0, 1)))
 end
 
 function LLEvents.touch_start(detected)
-    ll.Say(0, gateLc(0, 1))
+    ll.Say(0, tostring(gateLc(0, 1)))
 end
 
 state_entry()
 
---[[
-Both False or B True
-]]
+-- 1
 
 --[[
 Dedicated to God the Father

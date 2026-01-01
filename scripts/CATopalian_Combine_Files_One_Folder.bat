@@ -1,4 +1,4 @@
-:: Topalian_Combine_Files_One_Folder.bat
+:: CATopalian_Combine_Files_One_Folder.bat
 
 @echo off
 copy *.lua main.lua

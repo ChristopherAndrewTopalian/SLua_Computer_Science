@@ -2,25 +2,23 @@
 
 function gateMi(a, b)
     if a == 0 or b == 1 then
-        return "Both False or B True or Both True"
+        return 1 -- Both False or B True or Both True
     else
-        return '0'
+        return 0
     end
 end
 
 function state_entry()
-    ll.Say(0, gateMi(0, 1))
+    ll.Say(0, tostring(gateMi(0, 1)))
 end
 
 function LLEvents.touch_start(detected)
-    ll.Say(0, gateMi(0, 1))
+    ll.Say(0, tostring(gateMi(0, 1)))
 end
 
 state_entry()
 
---[[
-Both False or B True or Both True
-]]
+-- 1
 
 --[[
 Dedicated to God the Father
