@@ -22,8 +22,9 @@ function state_entry()
     end
 end
 
--- call the state_entry function to run the script
 state_entry()
+
+-- Jane: 98
 
 --[[
 Dedicated to God the Father
