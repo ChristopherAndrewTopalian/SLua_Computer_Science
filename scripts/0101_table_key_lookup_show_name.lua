@@ -18,7 +18,7 @@ local people =
 
 function state_entry()
     -- Instant lookup using dot notation
-    ll.Say(0, tostring(people.Jane.name))
+    ll.Say(0, people.Jane.name)
 end
 
 state_entry()
