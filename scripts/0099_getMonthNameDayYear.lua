@@ -6,9 +6,9 @@ function getMonthNameDayYear()
     local raw = ll.GetDate() -- "2025-03-21"
 
     -- extract parts using string.sub (slicing)
-    local year  = string.sub(raw, 1, 4)
+    local year = string.sub(raw, 1, 4)
     local monthIndex = tonumber(string.sub(raw, 6, 7))
-    local day   = string.sub(raw, 9, 10)
+    local day = string.sub(raw, 9, 10)
 
     return months[monthIndex] .. " " .. day .. ", " .. year
 end
