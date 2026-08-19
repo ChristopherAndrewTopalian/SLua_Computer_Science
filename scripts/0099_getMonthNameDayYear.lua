@@ -13,6 +13,8 @@ function getMonthNameDayYear()
     return months[monthIndex] .. " " .. day .. ", " .. year
 end
 
+print(getMonthNameDayYear())
+
 -- Mar 21, 2025
 
 --[[
